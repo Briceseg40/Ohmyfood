@@ -1,0 +1,17 @@
+$base-color: #0000DD;
+
+@for $i from 1 through 15 {
+    ul:nth-child(3n + #{$i}) {
+        background-color: lighten($base-color, $i * 5%);
+    }
+}
+
+@mixin big-text {
+    font-size: 19px;
+}
+
+body {
+    nav {
+        @include big-text;
+    }
+}
