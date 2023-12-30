@@ -1,0 +1,15 @@
+header {
+    background-color: white;
+    
+}
+
+header img, .city {
+    margin: auto;
+    display: flex;
+}
+
+header .city {
+    background-color: rgba(128, 128, 128, 50%);
+    text-align: center;
+    display: flex;
+}
