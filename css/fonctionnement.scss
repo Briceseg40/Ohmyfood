@@ -1,12 +1,16 @@
 .fonctionnement {
-    h2 {
+    h3
+    {
         margin: 35px 0 20px 20px;
+        font-weight: 800;
+        font-size: 23px;
     }
 
     .fonctionnement-list {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .fonctionnement-bloc {
@@ -22,20 +26,21 @@
             margin-right: 5px;
         }
         i {
-            margin-right: 15px;
+            margin-right: 25px;
             color: rgb(101, 100, 100);
             padding-bottom: 5px;
 
         }
 
         #circle-number {
+            font-size: 15px;
             position: relative;
             left: -12px;
             background-color: #9356DC;
             color: white;
             height: auto;
             padding: 1px;
-            min-width: 22px;
+            min-width: 20px;
             border-radius: 50%;
             text-align: center;
             display: flex;

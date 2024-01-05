@@ -16,6 +16,12 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+h1, h2, h3, h4, h5 {
+  font-family: ' Shrikhand';
+}
+p, button {
+  font-family: 'Roboto';
+}
 
 /* :root {
   --vert-clair : #99e2d0;
