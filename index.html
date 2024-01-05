@@ -22,10 +22,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/hero.css">  
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/fonctionnement.css">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
@@ -33,10 +39,14 @@
 
 <body>
   <header>
-    <img src="img/logo/ohmyfood.png" alt="logo ogmyfood">
-    <div class="city">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Paris, Belleville</p>
+    <div class="container-logo">
+    <img class="logo" src="img/logo/ohmyfood.png" alt="logo ogmyfood">
+  </div>
+    <div class="gray">
+      <div class="city">
+         <i class="fa-solid fa-location-dot"></i>
+        <p>Paris, Belleville</p>
+     </div>
     </div>
   </header>
 
@@ -45,18 +55,20 @@
     <h1>Réservez le menu qui vous convient </h1>
     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
     <button>Explorer nos restaurants</button>
-  </section>
+  </section> 
 
-  <section class="operation">
+  <section class="fonctionnement">
     <h2>Fonctionnement</h2>
-    <div class="operation-list">
-      <h3>1</h3>
-      <i class="fa-solid fa-mobile-screen"></i>
-      <p>CXhoissisez un restaurant</p>
+    <div class="fonctionnement-list">
+      <div class="fonctionnement-bloc">
+      <p id="circle-number">1</p>
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <p>Choissisez un restaurant</p>
+    </div>
     </div>
 
   </section>
-
+<!-- 
   <section class="restaurant">
     <div class="restaurant-card">
       <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
@@ -67,8 +79,8 @@
       </div>
       <i class="fa-regular fa-heart"></i>
     </div>
-  </section>
-
+  </section> -->
+<!-- 
 <footer>
   <ul>
     <li>Proposer un restaurant</li>
@@ -79,7 +91,7 @@
     <li>Contact</li>
   </ul>
   <img src="img/logo/ohmyfood@2x.svg" alt="">
-</footer>
+</footer> -->
   
 
 
