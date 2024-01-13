@@ -1,0 +1,25 @@
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer h2 {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0 0 20px;
+}
+footer #footer-text-weight {
+  font-weight: 800;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+footer ul li {
+  font-size: 20px;
+}
+footer ul li i {
+  padding-right: 20px;
+  width: 10px;
+}/*# sourceMappingURL=footer.css.map */

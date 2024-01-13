@@ -1,0 +1,71 @@
+.restaurant {
+  background-color: rgb(247, 245, 245);
+  padding: 20px 20px 70px 20px;
+  margin: 80px auto 0 auto;
+}
+.restaurant h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.restaurant .restaurant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.restaurant .restaurant-list .restaurant-card {
+  position: relative;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+.restaurant .restaurant-list .restaurant-card a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.restaurant .restaurant-list .restaurant-card #news {
+  position: absolute;
+  right: 15px;
+  background-color: #99E2D0;
+  padding: 5px 10px 5px 10px;
+  color: #356156;
+  font-weight: bolder;
+}
+.restaurant .restaurant-list .restaurant-card img {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant .restaurant-list .restaurant-card .text-heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+}
+.restaurant .restaurant-list .restaurant-card .text-heart .restaurant-text h4,
+.restaurant .restaurant-list .restaurant-card .text-heart .restaurant-text p {
+  margin: 0;
+}
+.restaurant .restaurant-list .restaurant-card .text-heart .heart-visibility {
+  font-size: 25px;
+  z-index: 2;
+  pointer-events: none;
+}
+.restaurant .restaurant-list .restaurant-card .text-heart .heart-visibility .heart2 {
+  display: none;
+  z-index: 1;
+}
+.restaurant .restaurant-list .restaurant-card .text-heart .heart-visibility:active .heart1 {
+  display: none;
+  z-index: 1;
+}
+.restaurant .restaurant-list .restaurant-card .text-heart .heart-visibility:active .heart2 {
+  display: block;
+  z-index: 2;
+  color: #9356DC;
+  transition: 1s ease-in;
+}/*# sourceMappingURL=restaurant.css.map */

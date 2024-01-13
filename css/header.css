@@ -1,6 +1,17 @@
 header .container-logo {
   box-shadow: 0 2px 2px rgb(166, 166, 166);
   scale: 1;
+  align-items: center;
+  display: flex;
+}
+header .container-logo a {
+  color: black;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+header .container-logo a i {
+  position: absolute;
+  font-size: 25px;
 }
 header .logo {
   margin: 0 auto;
