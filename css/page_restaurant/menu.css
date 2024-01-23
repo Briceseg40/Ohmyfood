@@ -1,3 +1,54 @@
 .home_page img {
   width: 100%;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -50px;
+  border-radius: 40px 40px 0 0;
+}
+.menu .titre_menu {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .titre_menu .heart-menu {
+  margin-right: 30px;
+  font-size: 25px;
+}
+.menu .plats {
+  width: 90%;
+  margin: 0 auto;
+}
+.menu .plats h3 {
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  width: 48px;
+}
+.menu .plats .plats-grille {
+  gap: 20px;
+}
+.menu .plats .plats-grille .sous-plats {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #aba8a8;
+}
+.menu .plats .plats-grille .sous-plats h4, .menu .plats .plats-grille .sous-plats h3, .menu .plats .plats-grille .sous-plats p {
+  margin: 0;
+}
+.menu .plats .plats-grille .sous-plats h4 {
+  font-size: 20px;
+}
+.menu .plats .plats-grille .sous-plats .text-price {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=menu.css.map */
