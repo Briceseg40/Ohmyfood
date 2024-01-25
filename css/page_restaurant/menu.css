@@ -22,6 +22,19 @@
   margin-right: 30px;
   font-size: 25px;
 }
+.menu .titre_menu .heart-menu .heart2 {
+  display: none;
+}
+.menu .titre_menu .heart-menu:checked .heart1 {
+  display: none;
+  z-index: 1;
+}
+.menu .titre_menu .heart-menu:checked .heart2 {
+  display: block;
+  z-index: 2;
+  color: #9356DC;
+  transition: 1s ease-in;
+}
 .menu .plats {
   width: 90%;
   margin: 0 auto;
@@ -32,12 +45,14 @@
   width: 48px;
 }
 .menu .plats .plats-grille {
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .menu .plats .plats-grille .sous-plats {
   background-color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 15px;
   box-shadow: 0px 5px 10px #aba8a8;
 }
 .menu .plats .plats-grille .sous-plats h4, .menu .plats .plats-grille .sous-plats h3, .menu .plats .plats-grille .sous-plats p {
