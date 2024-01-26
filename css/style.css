@@ -4,9 +4,18 @@ h2 {
   margin: 0;
   font-weight: lighter;
 }
-p, button, h3, h1, h4, h5, li {
+button, h1, h5, li {
+  font-family: 'Roboto';
+  font-weight: 500;
+  
+}
+
+h4 {
   font-family: 'Roboto';
 }
-h3 {
-  font-weight: bold;
+
+
+p, h3  {
+  font-family: 'Roboto';
+font-weight: 300;
 }

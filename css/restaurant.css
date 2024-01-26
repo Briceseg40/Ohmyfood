@@ -4,7 +4,7 @@
   margin: 80px auto 0 auto;
 }
 .restaurant h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
 }
 .restaurant .restaurant-list {
@@ -15,9 +15,26 @@
 .restaurant .restaurant-list .restaurant-card {
   position: relative;
   background-color: white;
-  height: 200px;
+  height: 210px;
   width: 100%;
   border-radius: 15px;
+}
+.restaurant .restaurant-list .restaurant-card img {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant .restaurant-list .restaurant-card .restaurant-text {
+  margin-left: 15px;
+  margin-top: 10px;
+  align-items: center;
+}
+.restaurant .restaurant-list .restaurant-card .restaurant-text h4,
+.restaurant .restaurant-list .restaurant-card .restaurant-text p {
+  margin: 0;
+  margin-bottom: 5px;
 }
 .restaurant .restaurant-list .restaurant-card a {
   text-decoration: none;
@@ -37,93 +54,34 @@
   font-weight: bolder;
 }
 .restaurant .restaurant-list .restaurant-card input[type=checkbox] {
-  height: 10px;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   position: absolute;
-  background-color: transparent;
-  transform: rotate(45deg);
-  outline: none;
   z-index: 1;
   bottom: 20px;
   right: 20px;
   -webkit-appearance: none;
 }
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:before {
+.restaurant .restaurant-list .restaurant-card .heart-menu {
   position: absolute;
-  outline: none;
-  content: "";
-  background-color: transparent;
-  border-right: 2px solid black;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  height: 59%;
-  width: 97%;
-  border-radius: 75px 75px 0 0;
-  bottom: 97%;
-  left: -20%;
-}
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:after {
-  position: absolute;
-  outline: none;
-  content: "";
-  background-color: transparent;
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  height: 97%;
-  width: 59%;
-  top: -20%;
-  border-radius: 75px 0 0 75px;
-  right: 97%;
-}
-.restaurant .restaurant-list .restaurant-card input:checked[type=checkbox]:after {
-  border-left: 2px solid #5b00ca;
-  border-top: 2px solid #5b00ca;
-  border-bottom: 2px solid #5b00ca;
-}
-.restaurant .restaurant-list .restaurant-card input:checked[type=checkbox] {
-  border-bottom: 2px solid #5b00ca;
-  border-right: 2px solid #5b00ca;
-}
-.restaurant .restaurant-list .restaurant-card input:checked[type=checkbox]:before {
-  border-right: 2px solid #5b00ca;
-  border-top: 2px solid #5b00ca;
-  border-left: 2px solid #5b00ca;
-}
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked,
-.restaurant .restaurant-list .restaurant-card input:checked[type=checkbox]:after,
-.restaurant .restaurant-list .restaurant-card input:checked[type=checkbox]:before {
-  background-color: #5b00ca;
-}
-.restaurant .restaurant-list .restaurant-card img {
-  width: 100%;
-  height: 140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-.restaurant .restaurant-list .restaurant-card .restaurant-text h4,
-.restaurant .restaurant-list .restaurant-card .restaurant-text p {
-  margin: 0;
-}
-.restaurant .restaurant-list .restaurant-card .heart-visibility {
+  bottom: 20px;
+  right: 20px;
   font-size: 25px;
-  z-index: 2;
-  pointer-events: none;
+  z-index: 0;
 }
-.restaurant .restaurant-list .restaurant-card .heart-visibility .heart2 {
+.restaurant .restaurant-list .restaurant-card .heart-menu .heart2 {
   display: none;
+}
+.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked {
   z-index: 1;
 }
-.restaurant .restaurant-list .restaurant-card .heart-visibility:active .heart1 {
-  display: none;
-  z-index: 1;
+.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked .heart-menu {
+  z-index: 0;
 }
-.restaurant .restaurant-list .restaurant-card .heart-visibility:active .heart2 {
-  display: block;
-  z-index: 2;
-  color: #9356DC;
-  transition: 1s ease-in;
+.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked .heart-menu .heart2 {
+  display: inline;
+  color: red;
+}
+.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked .heart-menu .heart1 {
+  display: none;
 }/*# sourceMappingURL=restaurant.css.map */
