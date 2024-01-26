@@ -2,6 +2,7 @@
 h2 {
   font-family: 'Shrikhand';
   margin: 0;
+  font-weight: lighter;
 }
 p, button, h3, h1, h4, h5, li {
   font-family: 'Roboto';
