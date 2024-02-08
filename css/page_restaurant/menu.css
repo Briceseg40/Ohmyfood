@@ -27,6 +27,8 @@
   z-index: 1;
   position: relative;
   border-radius: 40px 40px 0 0;
+  justify-content: center;
+  padding-bottom: 35px;
 }
 .menu .all-menu .titre_menu {
   width: 90%;
@@ -35,23 +37,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.menu .all-menu .titre_menu .heart-menu {
-  margin-right: 30px;
-  font-size: 25px;
-}
-.menu .all-menu .titre_menu .heart-menu .heart2 {
-  display: none;
-}
-.menu .all-menu .titre_menu .heart-menu:checked .heart1 {
-  display: none;
-  z-index: 1;
-}
-.menu .all-menu .titre_menu .heart-menu:checked .heart2 {
-  display: block;
-  z-index: 2;
-  color: #9356DC;
-  transition: 1s ease-in;
 }
 .menu .all-menu .plats {
   width: 90%;
@@ -86,4 +71,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.menu .all-menu button {
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  justify-content: center;
 }/*# sourceMappingURL=menu.css.map */

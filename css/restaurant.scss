@@ -62,49 +62,41 @@
 
             }
 
-            input[type="checkbox"] {
-                height: 20px;
-                width: 20px;
-                position: absolute;
-            
-              
-                z-index: 1;
-                bottom: 20px;
-                right: 20px;
-                -webkit-appearance: none;
-            }
-
-            .heart-menu {
+            label {
                 position: absolute;
                 bottom: 20px;
                 right: 20px;
                 font-size: 25px;
                 z-index: 0;
 
-                .heart2 {
-                    display: none;
+                .fa-heart {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 0px;
                 }
+                 .heart1 {
+                    background-color: white;
+                    z-index: 1;
+                 }
+                 .heart2 {
+                    color: violet;
+                 }
             }
 
-
-            input[type="checkbox"]:checked {
+            input[type="checkbox"] {
+                height: 20px;
+                width: 20px;
+                position: absolute;
                 z-index: 1;
-                .heart-menu {
-                    z-index: 0;
-                    .heart2 {
-                        display: inline;
-                        color: red;
-                    }
-                    .heart1 {
-                        display: none;
-                    }
-                }
+                bottom: 20px;
+                right: 20px;
+                display: none;
             }
+
+            input[type="checkbox"]:checked + .heart1 {
+                display: none;
+            }
+           
         }
-
-
-
-
-
     }
 }

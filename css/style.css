@@ -4,14 +4,32 @@ h2 {
   margin: 0;
   font-weight: lighter;
 }
-button, h1, h5, li {
+button, h5, li {
   font-family: 'Roboto';
   font-weight: 500;
   
 }
+button {
+  width: 200px;
+  background: linear-gradient(#E570DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 9px 0;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+#price {
+  font-weight: 700;
+}
 
 h4 {
   font-family: 'Roboto';
+  font-weight: 500;
 }
 
 

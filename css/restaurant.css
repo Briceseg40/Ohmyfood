@@ -53,6 +53,25 @@
   color: #356156;
   font-weight: bolder;
 }
+.restaurant .restaurant-list .restaurant-card label {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  z-index: 0;
+}
+.restaurant .restaurant-list .restaurant-card label .fa-heart {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+.restaurant .restaurant-list .restaurant-card label .heart1 {
+  background-color: white;
+  z-index: 1;
+}
+.restaurant .restaurant-list .restaurant-card label .heart2 {
+  color: violet;
+}
 .restaurant .restaurant-list .restaurant-card input[type=checkbox] {
   height: 20px;
   width: 20px;
@@ -60,28 +79,8 @@
   z-index: 1;
   bottom: 20px;
   right: 20px;
-  -webkit-appearance: none;
-}
-.restaurant .restaurant-list .restaurant-card .heart-menu {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 25px;
-  z-index: 0;
-}
-.restaurant .restaurant-list .restaurant-card .heart-menu .heart2 {
   display: none;
 }
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked {
-  z-index: 1;
-}
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked .heart-menu {
-  z-index: 0;
-}
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked .heart-menu .heart2 {
-  display: inline;
-  color: red;
-}
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked .heart-menu .heart1 {
+.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked + .heart1 {
   display: none;
 }/*# sourceMappingURL=restaurant.css.map */

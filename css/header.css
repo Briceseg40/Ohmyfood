@@ -29,6 +29,9 @@ header .city {
   align-items: center;
   height: 50px;
 }
+header .city p {
+  font-weight: 500;
+}
 header .city i {
   margin-right: 15px;
 }/*# sourceMappingURL=header.css.map */
