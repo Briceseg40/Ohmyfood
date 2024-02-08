@@ -70,17 +70,18 @@
                 z-index: 0;
 
                 .fa-heart {
+                    cursor: pointer;
                     position: absolute;
                     right: 10px;
                     bottom: 0px;
                     transition: 0.2s ease-out;
                 }
-                 .heart1 {
+                 .heart1, .heart3, .heart5, .heart7 {
                     background-color: white;
                     z-index: 1;
                  }
                  
-                    .heart2 {
+                    .heart2, .heart4, .heart6, .heart8 {
                         background: linear-gradient(to bottom, #9356DC, rgb(238, 130, 238));
                         -webkit-background-clip: text;
                         background-clip: text;
@@ -99,7 +100,8 @@
                 display: none;
             }
 
-            input[type="checkbox"]:checked + .heart1 {
+            input[type="checkbox"]:checked + .heart1, input[type="checkbox"]:checked + .heart3, 
+            input[type="checkbox"]:checked + .heart5, input[type="checkbox"]:checked + .heart7 {
                 opacity: 0;
                 transition: 0.2s ease-in;
             }

@@ -16,7 +16,19 @@ button {
   border: none;
   border-radius: 20px;
   padding: 9px 0;
+  transition:
+    width 1s,
+    height 1s,
+    opacity 0.9s;
+    cursor: pointer;
+    transition: 0.5s;
 }
+
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.7;
+}
+
 
 h1 {
   font-family: 'Roboto';

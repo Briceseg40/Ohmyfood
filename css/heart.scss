@@ -1,5 +1,7 @@
 .menu {
     .all-menu {
+       max-width: 1055px;
+        margin: 0 auto;
         .titre_menu {
             position: relative;
 
@@ -34,6 +36,7 @@
                     color: transparent; /* pour cacher le texte d'origine */  
                        }
                 .fa-heart {
+                    cursor: pointer;
                     position: absolute;
                     right: 0px;
                     bottom: -15px;

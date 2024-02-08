@@ -1,4 +1,19 @@
 @media (min-width: 830px) {
+    .menu {
+        .all-menu {
+            .titre_menu {
+                position: relative;
+                justify-content: center;
+                label {
+                    right: 32%;
+                }
+            }
+            .plats {
+                max-width: 634px;
+            }
+        }
+    }
+   
     .fonctionnement {
         max-width: 900px;
         margin: 0 auto;
@@ -33,5 +48,26 @@
         }       
            
         
+    }
+    footer {
+        padding-right: 50px;
+        height: 114px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        .space-right{
+            margin-right: 20px;
+        }
+        h2 {
+            padding-bottom: 10px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                padding-right: 15px;
+
+            }
+        }
     }
 }

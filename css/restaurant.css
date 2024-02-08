@@ -61,16 +61,17 @@
   z-index: 0;
 }
 .restaurant .restaurant-list .restaurant-card label .fa-heart {
+  cursor: pointer;
   position: absolute;
   right: 10px;
   bottom: 0px;
   transition: 0.2s ease-out;
 }
-.restaurant .restaurant-list .restaurant-card label .heart1 {
+.restaurant .restaurant-list .restaurant-card label .heart1, .restaurant .restaurant-list .restaurant-card label .heart3, .restaurant .restaurant-list .restaurant-card label .heart5, .restaurant .restaurant-list .restaurant-card label .heart7 {
   background-color: white;
   z-index: 1;
 }
-.restaurant .restaurant-list .restaurant-card label .heart2 {
+.restaurant .restaurant-list .restaurant-card label .heart2, .restaurant .restaurant-list .restaurant-card label .heart4, .restaurant .restaurant-list .restaurant-card label .heart6, .restaurant .restaurant-list .restaurant-card label .heart8 {
   background: linear-gradient(to bottom, #9356DC, rgb(238, 130, 238));
   -webkit-background-clip: text;
   background-clip: text;
@@ -85,7 +86,8 @@
   right: 20px;
   display: none;
 }
-.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked + .heart1 {
+.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked + .heart1, .restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked + .heart3,
+.restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked + .heart5, .restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked + .heart7 {
   opacity: 0;
   transition: 0.2s ease-in;
 }/*# sourceMappingURL=restaurant.css.map */

@@ -1,4 +1,14 @@
 @media (min-width: 830px) {
+  .menu .all-menu .titre_menu {
+    position: relative;
+    justify-content: center;
+  }
+  .menu .all-menu .titre_menu label {
+    right: 32%;
+  }
+  .menu .all-menu .plats {
+    max-width: 634px;
+  }
   .fonctionnement {
     max-width: 900px;
     margin: 0 auto;
@@ -27,5 +37,25 @@
   }
   .restaurant .restaurant-list .restaurant-card {
     width: 45%;
+  }
+  footer {
+    padding-right: 50px;
+    height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  footer .space-right {
+    margin-right: 20px;
+  }
+  footer h2 {
+    padding-bottom: 10px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li {
+    padding-right: 15px;
   }
 }/*# sourceMappingURL=responsive.css.map */
