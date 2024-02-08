@@ -17,11 +17,16 @@ footer {
         margin-bottom: 0;
         li {
             font-size: 20px;
+            font-weight: 500;
+            padding-bottom: 5px;
             
             i {
-                padding-right: 20px;
-                width: 10px;
+                padding-right: 25px;
+                width: 8px;
             }
+        }
+        #li-weight {
+            font-weight: 400;
         }
     }
 }

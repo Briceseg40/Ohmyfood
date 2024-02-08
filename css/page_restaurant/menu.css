@@ -63,8 +63,11 @@
 .menu .all-menu .plats .plats-grille .sous-plats p {
   margin: 0;
 }
+.menu .all-menu .plats .plats-grille .sous-plats p {
+  font-size: 15px;
+}
 .menu .all-menu .plats .plats-grille .sous-plats h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .menu .all-menu .plats .plats-grille .sous-plats .text-price {
   padding-top: 5px;

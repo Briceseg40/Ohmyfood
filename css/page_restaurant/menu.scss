@@ -47,30 +47,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-
-            // .heart-menu {
-            //     margin-right: 30px;
-            //     font-size: 25px;
-
-            //     .heart2 {
-            //         display: none;
-            //     }
-            // }
-
-            // .heart-menu:checked {
-            //     .heart1 {
-            //         display: none;
-            //         z-index: 1;
-            //     }
-
-            //     .heart2 {
-
-            //         display: block;
-            //         z-index: 2;
-            //         color: #9356DC;
-            //         transition: 1s ease-in;
-            //     }
-            // }
         }
 
         .plats {
@@ -99,9 +75,12 @@
                     p {
                         margin: 0;
                     }
+                    p {
+                        font-size: 15px;
+                    }
 
                     h4 {
-                        font-size: 20px;
+                        font-size: 18px;
                     }
 
                     .text-price {

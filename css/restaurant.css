@@ -1,6 +1,6 @@
 .restaurant {
   background-color: rgb(247, 245, 245);
-  padding: 20px 20px 70px 20px;
+  padding: 15px 15px 70px 15px;
   margin: 80px auto 0 auto;
 }
 .restaurant h3 {
@@ -64,13 +64,17 @@
   position: absolute;
   right: 10px;
   bottom: 0px;
+  transition: 0.2s ease-out;
 }
 .restaurant .restaurant-list .restaurant-card label .heart1 {
   background-color: white;
   z-index: 1;
 }
 .restaurant .restaurant-list .restaurant-card label .heart2 {
-  color: violet;
+  background: linear-gradient(to bottom, #9356DC, rgb(238, 130, 238));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* pour cacher le texte d'origine */
 }
 .restaurant .restaurant-list .restaurant-card input[type=checkbox] {
   height: 20px;
@@ -82,5 +86,6 @@
   display: none;
 }
 .restaurant .restaurant-list .restaurant-card input[type=checkbox]:checked + .heart1 {
-  display: none;
+  opacity: 0;
+  transition: 0.2s ease-in;
 }/*# sourceMappingURL=restaurant.css.map */
