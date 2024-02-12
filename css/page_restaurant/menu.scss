@@ -33,6 +33,7 @@
         border-radius: 40px 40px 0 0;
         justify-content: center;
         padding-bottom: 35px;
+        height: 1100px;
 
 
         .titre_menu {
@@ -53,18 +54,51 @@
                 border-bottom: 3px solid #99E2D0;
                 width: 48px;
             }
-
+          
             .plats-grille {
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
-
+                overflow: hidden;
+                animation: slide-animation 1s linear;
+                .sous-plats:hover {
+                    .check-hover {
+                        transition: 0.5s;
+                        right: 0;
+                    }
+                    #price {
+                        transition: 14.5s;
+                        position: absolute;
+                        right: 75px;
+                    }
+                }
                 .sous-plats {
                     background-color: white;
                     padding: 15px;
-
+                    position: relative;
                     border-radius: 15px;
                     box-shadow: 0px 5px 10px #aba8a8;
+                    overflow: hidden;
+                    .check-hover {
+                        position: absolute;
+                        top: 0;
+                        right: -70px;
+                        width: 70px;
+                        font-size: 25px;
+                        height: 100%;
+                        background-color: #99E2D0;
+                        border-radius: 0px 10px 10px 0px;
+                        i {
+                            position: absolute;
+                            top: 0;
+                            width: 30px;
+                            height: 30px;
+                            margin: auto;
+                            right: 0; left: 0; bottom: 0;
+                            color: white;
+
+                        }
+                    }
 
                     h4,
                     h3,
@@ -96,5 +130,23 @@
             width: 150px;
            justify-content: center;
         }
+    }
+}
+
+@for $i from 1 through 3 {
+    .plats-grille:nth-child(3n + #{$i}) {
+      animation: slide-animation($i);
+    }
+  }
+
+
+@keyframes slide-animation {
+    0% { position: relative;
+        
+        transform: translateX(+1000px);
+    }
+    100% {
+        transform: translateX(0%);
+
     }
 }
