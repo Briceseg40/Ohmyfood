@@ -1,0 +1,45 @@
+.loader {
+  position: fixed;
+  background-color: rgba(177, 175, 175, 0.5);
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+  cursor: progress;
+  z-index: 3;
+  pointer-events: none;
+  animation: loader-visibility 2s linear;
+}
+.loader .chargement {
+  border: 10px solid rgba(177, 175, 175, 0);
+  border-top: 10px solid #003A68;
+  border-bottom: 10px solid #9356DC;
+  border-left: 10px solid #89C8FA;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  animation: loading 1.5s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-visibility {
+  0% {
+    display: block;
+  }
+  100% {
+    display: none;
+  }
+}/*# sourceMappingURL=loader.css.map */
