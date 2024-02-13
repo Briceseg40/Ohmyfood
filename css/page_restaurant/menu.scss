@@ -60,19 +60,27 @@
                 flex-direction: column;
                 gap: 12px;
                 overflow: hidden;
-                animation: slide-animation 1s linear;
                 .sous-plats:hover {
                     .check-hover {
                         transition: 0.5s;
                         right: 0;
                     }
                     #price {
-                        transition: 14.5s;
-                        position: absolute;
-                        right: 75px;
+                        transition: 5s;
+                        animation: slidein 0.4s linear;
                     }
                 }
+                #price {
+                    position: absolute;
+                    right: 10px;
+
+                }
+                .sous-plats:first-child {
+                    
+                }
                 .sous-plats {
+                    animation: slide-animation 1s linear;
+                    z-index: 3;
                     background-color: white;
                     padding: 15px;
                     position: relative;
@@ -90,7 +98,7 @@
                         border-radius: 0px 10px 10px 0px;
                         i {
                             position: absolute;
-                            top: 0;
+                            top: 10px;
                             width: 30px;
                             height: 30px;
                             margin: auto;
@@ -134,7 +142,7 @@
 }
 
 @for $i from 1 through 3 {
-    .plats-grille:nth-child(3n + #{$i}) {
+    .sous-plats:nth-child(3n + #{$i}) {
       animation: slide-animation($i);
     }
   }
@@ -143,10 +151,19 @@
 @keyframes slide-animation {
     0% { position: relative;
         
-        transform: translateX(+1000px);
+        transform: translateX(+500%);
     }
     100% {
         transform: translateX(0%);
 
     }
+}
+
+@keyframes slidein {
+    0% {
+        right: 10px;
+    }
+   100% {
+    right: 85px;
+   }
 }
