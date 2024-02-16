@@ -29,7 +29,7 @@
   border-radius: 40px 40px 0 0;
   justify-content: center;
   padding-bottom: 35px;
-  height: 1100px;
+  height: auto;
 }
 .menu .all-menu .titre_menu {
   width: 90%;
@@ -55,6 +55,7 @@
 }
 .menu .all-menu .plats .plats-grille .sous-plats {
   z-index: 3;
+  transform: translateX(180%);
   background-color: white;
   padding: 15px;
   position: relative;
@@ -67,6 +68,11 @@
 }
 .menu .all-menu .plats .plats-grille .sous-plats:hover #price {
   transform: translateX(-240%);
+}
+.menu .all-menu .plats .plats-grille .sous-plats #text-points {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu .all-menu .plats .plats-grille .sous-plats #price {
   position: absolute;
@@ -119,6 +125,18 @@
   justify-content: center;
 }
 
+.sous-plats:nth-child(1) {
+  animation: slide-animation 1s 0.5s forwards;
+}
+
+.sous-plats:nth-child(2) {
+  animation: slide-animation 1s 1s forwards;
+}
+
+.sous-plats:nth-child(3) {
+  animation: slide-animation 1s 1.5s forwards;
+}
+
 @keyframes slide-animation {
   0% {
     position: relative;
@@ -126,13 +144,5 @@
   }
   100% {
     transform: translateX(0%);
-  }
-}
-@keyframes slidein {
-  from {
-    right: 10px;
-  }
-  to {
-    right: 85px;
   }
 }/*# sourceMappingURL=menu.css.map */

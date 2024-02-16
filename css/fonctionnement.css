@@ -10,6 +10,7 @@
   gap: 20px;
 }
 .fonctionnement .fonctionnement-bloc {
+  cursor: pointer;
   display: flex;
   align-items: center;
   background-color: rgb(239, 237, 237);
@@ -17,6 +18,9 @@
   width: 290px;
   box-shadow: 0px 3px 3px rgb(180, 180, 180);
   font-weight: 800;
+}
+.fonctionnement .fonctionnement-bloc:hover i {
+  color: #9356DC;
 }
 .fonctionnement .fonctionnement-bloc p {
   margin-right: 5px;

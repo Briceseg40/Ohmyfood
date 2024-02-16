@@ -12,8 +12,14 @@
         align-items: center;
         gap: 20px;
     }
-
+   
     .fonctionnement-bloc {
+        &:hover {
+            i {
+                color: #9356DC;
+            }
+        }
+        cursor: pointer;
         display: flex;
         align-items: center;
         background-color: rgb(239, 237, 237);
