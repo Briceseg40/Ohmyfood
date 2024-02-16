@@ -52,31 +52,29 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  overflow: hidden;
-}
-.menu .all-menu .plats .plats-grille .sous-plats:hover .check-hover {
-  transition: 0.5s;
-  right: 0;
-}
-.menu .all-menu .plats .plats-grille .sous-plats:hover #price {
-  transition: 5s;
-  animation: slidein 0.4s linear;
-}
-.menu .all-menu .plats .plats-grille #price {
-  position: absolute;
-  right: 10px;
 }
 .menu .all-menu .plats .plats-grille .sous-plats {
-  animation: slide-animation 1s linear;
   z-index: 3;
   background-color: white;
   padding: 15px;
   position: relative;
   border-radius: 15px;
-  box-shadow: 0px 5px 10px #aba8a8;
+  box-shadow: 0px 7px 5px #aba8a8;
   overflow: hidden;
 }
+.menu .all-menu .plats .plats-grille .sous-plats:hover .check-hover {
+  transform: translateX(-100%);
+}
+.menu .all-menu .plats .plats-grille .sous-plats:hover #price {
+  transform: translateX(-240%);
+}
+.menu .all-menu .plats .plats-grille .sous-plats #price {
+  position: absolute;
+  right: 15px;
+  transition: 1s;
+}
 .menu .all-menu .plats .plats-grille .sous-plats .check-hover {
+  transition: 1s;
   position: absolute;
   top: 0;
   right: -70px;
@@ -121,32 +119,20 @@
   justify-content: center;
 }
 
-.sous-plats:nth-child(3n+1) {
-  animation: slide-animation(1);
-}
-
-.sous-plats:nth-child(3n+2) {
-  animation: slide-animation(2);
-}
-
-.sous-plats:nth-child(3n+3) {
-  animation: slide-animation(3);
-}
-
 @keyframes slide-animation {
   0% {
     position: relative;
-    transform: translateX(500%);
+    transform: translateX(150%);
   }
   100% {
     transform: translateX(0%);
   }
 }
 @keyframes slidein {
-  0% {
+  from {
     right: 10px;
   }
-  100% {
+  to {
     right: 85px;
   }
 }/*# sourceMappingURL=menu.css.map */

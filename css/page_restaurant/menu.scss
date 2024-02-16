@@ -59,35 +59,36 @@
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
-                overflow: hidden;
-                .sous-plats:hover {
-                    .check-hover {
-                        transition: 0.5s;
-                        right: 0;
-                    }
-                    #price {
-                        transition: 5s;
-                        animation: slidein 0.4s linear;
-                    }
-                }
-                #price {
-                    position: absolute;
-                    right: 10px;
-
-                }
-                .sous-plats:first-child {
+                
+                
                     
-                }
                 .sous-plats {
-                    animation: slide-animation 1s linear;
+
+                    &:hover {
+                        .check-hover {
+                            transform: translateX(-100%);                           
+                        }
+                        #price {
+                            transform: translateX(-240%);                           
+
+                        }
+                    }
                     z-index: 3;
                     background-color: white;
                     padding: 15px;
                     position: relative;
+                    // transform: translateX(+150%);
                     border-radius: 15px;
-                    box-shadow: 0px 5px 10px #aba8a8;
+                    box-shadow: 0px 7px 5px #aba8a8;
                     overflow: hidden;
+                    #price {
+                        position: absolute;
+                        right: 15px;
+                        transition: 1s;
+                    }
+
                     .check-hover {
+                        transition: 1s;
                         position: absolute;
                         top: 0;
                         right: -70px;
@@ -141,17 +142,17 @@
     }
 }
 
-@for $i from 1 through 3 {
-    .sous-plats:nth-child(3n + #{$i}) {
-      animation: slide-animation($i);
-    }
-  }
+// @for $i from 1 through 4 {
+//     .sous-plats:nth-child(#{$i}) {
+//        animation: slide-animation 1s ($i * 0.5s) forwards;
+//     }
+//   }
 
 
 @keyframes slide-animation {
     0% { position: relative;
         
-        transform: translateX(+500%);
+        transform: translateX(+150%);
     }
     100% {
         transform: translateX(0%);
@@ -160,10 +161,10 @@
 }
 
 @keyframes slidein {
-    0% {
+    from {
         right: 10px;
     }
-   100% {
+   to {
     right: 85px;
    }
 }
