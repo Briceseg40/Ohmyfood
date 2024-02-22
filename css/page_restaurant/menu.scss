@@ -14,13 +14,13 @@
 .menu {
 
     .container_img {
-        height: 160px;
+        height: 330px;
         z-index: 0;
         position: relative;
 
         img {
             width: 100%;
-            height: 200px;
+            height: 380px;
             object-fit: cover;
 
         }
@@ -71,8 +71,9 @@
 
                         }
                         
-                    }
-                    
+                    }  
+                    display: flex;
+                    justify-content: space-between;                  
                     z-index: 3;
                     transform: translateX(180%);
                     background-color: white;
@@ -81,14 +82,17 @@
                     border-radius: 15px;
                     box-shadow: 0px 7px 5px #aba8a8;
                     overflow: hidden;
-                    .text-price p {
+                    .card-text, .card-text:hover {
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow: hidden;
                     }
-                    .price {                    
+                   
+                    .price {        
+                        // height: 100%;       
                         position: relative;
-                        right: 0;
+                        // right: 20px;
+                       top: 20px;
                         transition: 1s;
                     }
 
@@ -148,7 +152,7 @@
     }
 }
 
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
     .sous-plats:nth-child(#{$i}) {
        animation: slide-animation 1s ($i * 0.5s) forwards;
     }

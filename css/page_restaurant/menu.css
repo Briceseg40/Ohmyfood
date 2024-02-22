@@ -12,13 +12,13 @@
 }
 
 .menu .container_img {
-  height: 160px;
+  height: 330px;
   z-index: 0;
   position: relative;
 }
 .menu .container_img img {
   width: 100%;
-  height: 200px;
+  height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -54,6 +54,8 @@
   gap: 12px;
 }
 .menu .all-menu .plats .plats-grille .sous-plats {
+  display: flex;
+  justify-content: space-between;
   z-index: 3;
   transform: translateX(180%);
   background-color: white;
@@ -69,14 +71,14 @@
 .menu .all-menu .plats .plats-grille .sous-plats:hover .price {
   transform: translateX(-240%);
 }
-.menu .all-menu .plats .plats-grille .sous-plats .text-price p {
+.menu .all-menu .plats .plats-grille .sous-plats .card-text, .menu .all-menu .plats .plats-grille .sous-plats .card-text:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu .all-menu .plats .plats-grille .sous-plats .price {
   position: relative;
-  right: 0;
+  top: 20px;
   transition: 1s;
 }
 .menu .all-menu .plats .plats-grille .sous-plats .check-hover {
@@ -135,6 +137,10 @@
 
 .sous-plats:nth-child(3) {
   animation: slide-animation 1s 1.5s forwards;
+}
+
+.sous-plats:nth-child(4) {
+  animation: slide-animation 1s 2s forwards;
 }
 
 @keyframes slide-animation {
