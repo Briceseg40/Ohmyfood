@@ -68,18 +68,21 @@
 .menu .all-menu .plats .plats-grille .sous-plats:hover .check-hover {
   transform: translateX(-100%);
 }
-.menu .all-menu .plats .plats-grille .sous-plats:hover .price {
-  transform: translateX(-240%);
+.menu .all-menu .plats .plats-grille .sous-plats:hover .price-card {
+  margin-right: 66px;
+  transition: 1s;
 }
-.menu .all-menu .plats .plats-grille .sous-plats .card-text, .menu .all-menu .plats .plats-grille .sous-plats .card-text:hover {
+.menu .all-menu .plats .plats-grille .sous-plats .price-card {
+  padding-top: 15px;
+  margin-left: 5px;
+  transition: 1s;
+}
+.menu .all-menu .plats .plats-grille .sous-plats .card-text h4,
+.menu .all-menu .plats .plats-grille .sous-plats .card-text p,
+.menu .all-menu .plats .plats-grille .sous-plats .card-text {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-.menu .all-menu .plats .plats-grille .sous-plats .price {
-  position: relative;
-  top: 20px;
-  transition: 1s;
 }
 .menu .all-menu .plats .plats-grille .sous-plats .check-hover {
   transition: 1s;
