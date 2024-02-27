@@ -45,7 +45,7 @@
   height: 100%;
   text-decoration: none;
 }
-.restaurant .restaurant-list .restaurant-card a #news {
+.restaurant .restaurant-list .restaurant-card a .news {
   position: absolute;
   right: 15px;
   background-color: #99E2D0;
