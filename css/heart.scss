@@ -27,8 +27,11 @@
                     opacity: 0;
                     transition: 0.3s ease-out;
                 }
-                @include heart-animation;
                 
+                @include heart-animation;
+                .heart1 {
+                    background-color: #F6F6F6;
+                }
                 .fa-heart {
                     cursor: pointer;
                     position: absolute;
