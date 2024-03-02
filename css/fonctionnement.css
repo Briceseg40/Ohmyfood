@@ -13,7 +13,8 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  background-color: rgb(239, 237, 237);
+  background-color: #f6f6f6;
+  height: 71px;
   border-radius: 15px;
   width: 290px;
   box-shadow: 0px 3px 3px rgb(180, 180, 180);

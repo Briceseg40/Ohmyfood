@@ -21,7 +21,6 @@
   .fonctionnement .fonctionnement-list {
     flex-direction: row;
     gap: 30px;
-    padding-left: 15px;
   }
   .restaurant h3 {
     max-width: 900px;
