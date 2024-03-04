@@ -1,4 +1,25 @@
-@media (min-width: 830px) {
+@media (min-width: 700px) {
+    .fonctionnement {
+        max-width: 900px;
+        margin: 0 auto;
+      
+        .fonctionnement-list {
+            flex-direction: row;
+            gap: 30px;
+            margin: 0 20px;
+        }
+
+    }
+    .restaurant {
+        h3 {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (min-width: 991px) {
     .menu {
         .all-menu {
             .titre_menu {
